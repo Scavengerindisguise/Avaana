@@ -1,0 +1,46 @@
+<div class="card-row">
+    <div class="row g-0">
+        <div class="col px-2" *ngFor="let card of cardData">
+            <div class="card" style="width: 350px;">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="../../../assets/first.png" alt="card-image" class="img-fluid" />
+                        </div>
+                        <div class="col-sm-6">
+                            <h5 class="card-title">{{card.title}}</h5>
+                            <p class="card-title-2">{{card.location}}</p>
+                        </div>
+                    </div>
+                    <div class="row consultation-card pt-2">
+                        <div class="col-sm-9 text-start">
+                            <p class="card-title-3 m-0">{{card.type}}</p>
+                        </div>
+                        <div class="col-sm-3 p-0">
+                            <p class="card-title-3 m-0">{{card.price}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 text-start">
+                            <p class="card-title-3 m-0">Today {{card.date | date: 'MMM dd'}}</p>
+                        </div>
+                        <div class="col-sm-6 text-end">
+                            <p class="card-title-3 m-0">Show All Times</p>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col p-0">
+                            <button type="button" class="btn btn-light">11:00 AM</button>
+                        </div>
+                        <div class="col p-0">
+                            <button type="button" class="btn btn-light">11:30 AM</button>
+                        </div>
+                        <div class="col p-0">
+                            <button type="button" class="btn btn-light">+29 more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+.right-padding {
+    padding-right: 20px;
+}
+
+.bg-light {
+    background-color: #095d59 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-light .navbar-brand {
+    color: #f0f4f1;
+}
+
+.navbar-light .navbar-brand fa-icon {
+    color: #00bd71;
+}

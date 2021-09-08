@@ -1,0 +1,64 @@
+<app-navigation></app-navigation>
+<!-- <p style="padding: 5px;"></p> -->
+<main>
+    <section class="landing-image">
+        <div class="welcome-image">
+            <div class="row">
+                <div class="welcome-text">
+                    <h1>Seeking Wellbeing? <br> You’re in the right place.</h1>
+                </div>
+            </div>
+            <div class="row booking-form">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item border-bottom border-2">
+                        <a class="nav-link active px-0" aria-current="page" href="#">APPOINTMENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CLASSES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ONLINE</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="booking-inputs">
+                <div class="row px-4">
+                    <div class="col-sm-5 px-0">
+                        <div class="row g-0">
+                            <div class="col-sm-1 mt-2">
+                                <fa-icon [icon]="faSearch"></fa-icon>
+                            </div>
+                            <div class="col-sm-11">
+                                <input type="text" class="form-control"
+                                    placeholder="Search for a service, provider or symptom"
+                                    aria-label="Search for a service, provider or symptom">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm px-1">
+                        <input type="text" class="form-control" placeholder="Select a location"
+                            aria-label="Select a location">
+                    </div>
+                    <div class="col-sm px-0">
+                        <input type="text" class="form-control" placeholder="When do you want to go?"
+                            aria-label="When do you want to go?">
+                    </div>
+                    <div class="col-sm-2 py-2">
+                        <app-button [text]="'Discover'"></app-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <img src="../../../assets/Group 44.png" alt="landing-image" class="img-fluid" /> -->
+    </section>
+    <article class="consultation-article text-center">
+        <h3>Discover wellbeing services near you</h3>
+        <p class="py-4">Displaying nearby wellbeing for Hawthorn</p>
+        <section class="landing-article">
+            <app-health-card [cardData]="cardData"></app-health-card>
+            <div class="click-action py-5 my-5">
+                <app-button [text]="'FIND MORE WELLBEING NEARBY'"></app-button>
+            </div>
+        </section>
+    </article>
+</main>

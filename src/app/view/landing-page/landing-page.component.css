@@ -1,0 +1,86 @@
+.landing-image {
+    padding: 0 40px;
+}
+
+.welcome-image {
+    background-image: url("../../../assets/Group 44.png");
+    height: 715px;
+}
+
+.welcome-text {
+    color: #ffffff;
+    padding: 250px 0 0 200px;
+}
+
+.landing-article {
+    padding: 0 40px;
+    overflow: auto;
+}
+
+main{
+    background-color: #095d59;
+}
+
+.consultation-article {
+    padding: 30px 0 0 0;
+    color: white;
+    font-family: Recoletta;
+}
+
+.booking-form {
+    margin-top: 100px;
+}
+
+.booking-form .nav .nav-link {
+    color: #ffffff;
+}
+.booking-inputs {
+    margin: 3% 22% 0 22%;
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 23px;
+}
+
+.booking-inputs .form-control {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #095D59;
+    border-radius: 0;
+    font-size: 14px;
+}
+
+.booking-inputs .form-control:focus {
+    box-shadow: none;
+}
+
+.discover-button {
+    margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .landing-image {
+        padding: 0;
+    }
+
+    .welcome-text {
+        color: #ffffff;
+        padding: 250px 0 0 50px;
+    }
+
+    .booking-inputs {
+        margin: 3% 12% 0 12%;
+        padding: 5px;
+        background-color: #ffffff;
+        border-radius: 23px;
+    }
+
+    .booking-inputs app-button {
+        margin-top: 5px;
+    }
+
+    .click-action app-button{
+        width: 100%;
+    }
+    
+  }
+
