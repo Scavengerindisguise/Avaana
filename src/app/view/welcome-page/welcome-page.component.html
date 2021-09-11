@@ -1,0 +1,41 @@
+<section class="landing-image">
+    <div class="welcome-image">
+        <div class="row">
+            <div class="welcome-text">
+                <h1>Seeking Wellbeing? <br> You’re in the right place.</h1>
+            </div>
+        </div>
+        <div class="row booking-form">
+            <ul class="nav justify-content-center">
+                <li class="nav-item" [ngClass]="{'border-bottom': activeLink === 'APPOINTMENTS', 'border-2': activeLink === 'APPOINTMENTS'}">
+                    <a class="nav-link" (click)="activeLink = 'APPOINTMENTS'"><b>APPOINTMENTS</b></a>
+                </li>
+                <li class="nav-item" [ngClass]="{'border-bottom': activeLink === 'CLASSES', 'border-2': activeLink === 'CLASSES'}">
+                    <a class="nav-link" (click)="activeLink = 'CLASSES'"><b>CLASSES</b></a>
+                </li>
+                <li class="nav-item" [ngClass]="{'border-bottom': activeLink === 'ONLINE', 'border-2': activeLink === 'ONLINE'}">
+                    <a class="nav-link" (click)="activeLink = 'ONLINE'"><b>ONLINE</b></a>
+                </li>
+            </ul>
+        </div>
+        <div class="booking-inputs">
+            <div class="row px-3">
+                <div class="col-sm-4 border-end border-2 px-3">
+                    <input type="text" class="form-control" placeholder="&#xf002; Search for a service, provider or symptom"
+                        aria-label="Search for a service, provider or symptom">
+                </div>
+                <div class="col-sm-2 border-end border-2 px-3">
+                    <input type="text" class="form-control" placeholder="&#xf041; Select a location"
+                        aria-label="Select a location">
+                </div>
+                <div class="col-sm-3 px-3">
+                    <input type="text" class="form-control" placeholder="&#xf133; When do you want to go?"
+                        aria-label="When do you want to go?">
+                </div>
+                <div class="col-sm-3 px-5 discover">
+                    <app-button [text]="'Discover'"></app-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

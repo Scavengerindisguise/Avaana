@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "welcomeFont";
+    src: url('../../../assets/Recoleta-RegularDEMO.otf');
+}
+
+.welcome-image {
+    background-image: url("../../../assets/Group 44.png");
+    height: 715px;
+}
+
+.landing-image {
+    padding: 0 40px;
+}
+
+a{
+    cursor: pointer;
+}
+
+
+
+.welcome-text {
+    color: #ffffff;
+    padding: 250px 0 0 200px;
+    font-family: "welcomeFont", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.booking-form {
+    margin-top: 100px;
+}
+
+.booking-form .nav .nav-link {
+    color: #ffffff;
+}
+.booking-inputs {
+    margin: 3% 18% 0 18%;
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 23px;
+}
+
+.booking-inputs .form-control {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #095D59;
+    border-radius: 0;
+    font-size: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 5px;
+
+}
+
+.booking-inputs .form-control:focus {
+    box-shadow: none;
+}
+
+.discover-button {
+    margin-left: auto;
+}
+
+textarea, input {
+    padding:10px;
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+@media screen and (max-width: 768px) {
+    .landing-image {
+        padding: 0;
+    }
+
+    .welcome-text {
+        color: #ffffff;
+        padding: 250px 0 0 50px;
+    }
+
+    .booking-inputs {
+        margin: 3% 12% 0 12%;
+        padding: 5px;
+        background-color: #ffffff;
+        border-radius: 23px;
+    }
+
+    .booking-inputs app-button {
+        margin-top: 5px;
+    }
+
+    .click-action app-button{
+        width: 100%;
+    }
+
+    .discover{
+        margin-top: 5px;
+    }
+
+    
+  }

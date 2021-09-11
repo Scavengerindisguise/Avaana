@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { faHeartbeat, faSearch, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navigation',
@@ -7,9 +6,9 @@ import { faHeartbeat, faSearch, faUserCircle } from '@fortawesome/free-solid-svg
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent implements OnInit {
-  faSearch = faSearch;
-  faUserCircle = faUserCircle;
-  faHeartBeat = faHeartbeat;
+  // faSearch = faSearch;
+  // faUserCircle = faUserCircle;
+  // faHeartBeat = faHeartbeat;
   navbarOpen = false;
   
 

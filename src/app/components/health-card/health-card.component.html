@@ -4,39 +4,51 @@
             <div class="card" style="width: 350px;">
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-md-4">
                             <img src="../../../assets/first.png" alt="card-image" class="img-fluid" />
                         </div>
-                        <div class="col-sm-6">
-                            <h5 class="card-title">{{card.title}}</h5>
-                            <p class="card-title-2">{{card.location}}</p>
+                        <div class="col-md-6 px-0">
+                            <div class="row justify-content-between">
+                                <div class="col-md-9">
+                                    <h5 class="card-title mb-1"><b>{{card.title}}</b></h5>
+                                </div>
+                                <div class="col-md-1 wishlist offset-md-3">
+                                    <i class="fa" [ngClass]="{'fa-heart': card.wishlist, 'fa-heart-o': !card.wishlist}" (click)="addToWishlist(card)" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <p class="card-title-2 mb-0">{{card.location}}</p>
+                            <div class="rating float-start">
+                                <span *ngFor="let star of starList; let i = index">
+                                    <i class={{star.style}} aria-hidden="true" (mouseover)="rateStar(i)"></i>
+                                </span>
+                            </div>
                         </div>
                     </div>
                     <div class="row consultation-card pt-2">
-                        <div class="col-sm-9 text-start">
-                            <p class="card-title-3 m-0">{{card.type}}</p>
+                        <div class="col-md-9 text-start">
+                            <p class="card-title-3 m-0"><b>{{card.type}}</b></p>
                         </div>
-                        <div class="col-sm-3 p-0">
-                            <p class="card-title-3 m-0">{{card.price}}</p>
+                        <div class="col-md-3 p-0">
+                            <p class="card-title-3 m-0"><b>{{card.price}}</b> / hour</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6 text-start">
+                        <div class="col-md-6 text-start">
                             <p class="card-title-3 m-0">Today {{card.date | date: 'MMM dd'}}</p>
                         </div>
-                        <div class="col-sm-6 text-end">
-                            <p class="card-title-3 m-0">Show All Times</p>
+                        <div class="col-md-6 text-end">
+                            <p class="card-title-4 m-0">Show All Times</p>
                         </div>
                     </div>
                     <div class="row pt-3">
                         <div class="col p-0">
-                            <button type="button" class="btn btn-light">11:00 AM</button>
+                            <button type="button" class="btn btn-light"><b>11:00 AM</b></button>
                         </div>
                         <div class="col p-0">
-                            <button type="button" class="btn btn-light">11:30 AM</button>
+                            <button type="button" class="btn btn-light"><b>11:30 AM</b></button>
                         </div>
                         <div class="col p-0">
-                            <button type="button" class="btn btn-light">+29 more</button>
+                            <button type="button" class="btn btn-light"><b>+29 more</b></button>
                         </div>
                     </div>
                 </div>
