@@ -1,5 +1,6 @@
 .card {
     color: #095d59;
+    border-radius: 12px;
 }
 .card-title {
     font-size: 10px;
