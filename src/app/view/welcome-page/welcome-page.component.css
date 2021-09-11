@@ -86,12 +86,17 @@ textarea, input {
         margin-top: 5px;
     }
 
+    .booking-inputs .border-end {
+        border: none !important;
+    }
+
     .click-action app-button{
         width: 100%;
     }
 
     .discover{
         margin-top: 5px;
+        text-align: center;
     }
 
     
