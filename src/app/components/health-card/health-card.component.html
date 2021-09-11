@@ -18,8 +18,8 @@
                             </div>
                             <p class="card-title-2 mb-0">{{card.location}}</p>
                             <div class="rating float-start">
-                                <span *ngFor="let star of starList; let i = index">
-                                    <i class={{star.style}} aria-hidden="true" (mouseover)="rateStar(i)"></i>
+                                <span *ngFor="let star of card.ratingList; let i = index">
+                                    <i class={{star.style}} aria-hidden="true" (mouseover)="rateStar(card,i)"></i>
                                 </span>
                             </div>
                         </div>

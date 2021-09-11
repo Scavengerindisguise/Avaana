@@ -8,4 +8,5 @@ export class HealthCardModel {
     price: string;
     date: number;
     wishlist: boolean;
+    ratingList: ratingModel[];
 }
