@@ -54,6 +54,9 @@
     color: #fd896b;
 }
 
+.btn {
+    color: #095d59;
+}
 
 ::-webkit-scrollbar {
     width: 10px;  
